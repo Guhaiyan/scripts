@@ -13,7 +13,7 @@ import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class RocksDBYcsbBinding extends DB {
-    private static final String DB_PATH = "/data2/rocksdb-ycsb";
+    private static final String DB_PATH = "/data1/rocksdb-ycsb";
     private static final int BYTE_BUFFER_SIZE = 4096;
 	private static final int BATCH_SIZE = 32;
 	private static final Object DB_LOCK = new Object();
