@@ -1,0 +1,8 @@
+主目录下的hibernate-core-4.3.11.Final.jar已经是包含了TrafodionDialect.class的可运行的jar包了
+
+编译trafodion dialect class
+javac -cp lib/*: org/hibernate/engine/jdbc/dialect/internal/StandardDialectResolver.java org/hibernate/dialect/TrafodionDialect.java
+
+然后解压hibernate-core-xxx.jar (unzip)
+把相应的class做替换
+打jar包： jar cfm hibernate-core-4.3.11.Final.jar META-INF/MANIFEST.MF org/
